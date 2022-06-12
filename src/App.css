@@ -1,0 +1,108 @@
+.App {
+  /* text-align: center; */
+  width: 90%;
+  margin: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.first_name{
+  width: 20%;
+}
+.last_name{
+  width: 20%;
+}
+.age{
+  width: 10%;
+}
+.email{
+  width: 25%;
+}
+.web{
+  width: 25%;
+}
+th, td{
+  display: relative;
+  border-bottom: 1px solid rgb(208, 205, 205);
+  padding: 10px 0;
+  /* border-collapse: collapse; */
+  border-spacing: 0;
+}
+
+.pagination-ul{
+  list-style: none;
+  display: flex;
+}
+
+.pagination-li{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.pagination-li a{
+  text-decoration: none;
+}
+
+h1{
+  font-weight: 400;
+}
+
+th{
+  font-weight: 600;
+  background-color: rgb(250, 246, 246);
+  position: relative;
+  left: 0;
+}
+
+input{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-color: rgb(136, 136, 237);
+  border-radius: 5px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.search-ele{
+  position: relative;
+  width: 40%;
+}
+
+.search-icon{
+  width: 17.5px;
+  position: absolute;
+  padding: 5px;
+  right: -14px;
+  top: 0;
+  border: 1px solid black;
+  background-origin: padding-box;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
