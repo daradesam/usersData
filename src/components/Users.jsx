@@ -31,8 +31,7 @@ export default function Users({ users, setUsers }) {
   }, [filterdUsers])
 
   function sortByFirstName(){
-    const sortedObjs = _.sortBy(currentUsers, ['currentUsers.first_name']);
-    console.log(sortedObjs)
+    
   }
 
   function sortByLastName(){
