@@ -1,7 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  /* text-align: center; */
-  width: 90%;
+  width: 90vw;
   margin: auto;
+  display: flex;
+}
+
+.users-table>*{
+  margin-bottom: 10px;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.home-wrapper>* {
+  margin: 20px;
 }
 
 .App-logo {
@@ -9,61 +29,71 @@
   pointer-events: none;
 }
 
-.first_name{
+.first_name {
   width: 20%;
 }
-.last_name{
+
+.last_name {
   width: 20%;
 }
-.age{
+
+.age {
   width: 10%;
 }
-.email{
+
+.email {
   width: 25%;
 }
-.web{
+
+.web {
   width: 25%;
 }
-th, td{
+
+th, td {
   display: relative;
   border-bottom: 1px solid rgb(208, 205, 205);
   padding: 10px 0;
-  /* border-collapse: collapse; */
   border-spacing: 0;
 }
 
-.pagination-ul{
+.pagination-ul {
   list-style: none;
   display: flex;
 }
 
-.pagination-li{
+.pagination-li {
   border: 1px solid black;
   padding: 5px;
   margin: 5px;
 }
 
-.pagination-li a{
+a {
   text-decoration: none;
 }
 
-h1{
+.pagination-li a {
+  text-decoration: none;
+}
+
+h1 {
   font-weight: 400;
 }
 
-th{
+th {
   font-weight: 600;
   background-color: rgb(250, 246, 246);
   position: relative;
   left: 0;
 }
 
-input{
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 5px;
-  border-color: rgb(136, 136, 237);
-  border-radius: 5px;
+th:hover{
+  cursor: pointer;
+}
+
+input {
+  width: 70%;
+  padding: 6px;
+  border: 1px solid rgb(136, 136, 237);
 }
 
 .App-header {
@@ -81,27 +111,62 @@ input{
   color: #61dafb;
 }
 
-.search-ele{
+.search-ele {
   position: relative;
   width: 40%;
+  display: flex;
+  align-items: center;
 }
 
-.search-icon{
+.search-icon {
   width: 17.5px;
-  position: absolute;
   padding: 5px;
-  right: -14px;
-  top: 0;
-  border: 1px solid black;
+  border: 1px solid rgb(136, 136, 237);
   background-origin: padding-box;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+}
+
+.usercard-wrapper {
+  display: flex;
+  margin: 3%;
+}
+
+.back-button-wrapper {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.back-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.back-btn:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: gray;
+  box-sizing: border-box;
+}
+
+.usercard-wrapper h2 {
+  border-bottom: 1px solid rgb(208, 205, 205);
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 400;
+}
+
+.usercard-wrapper h1 {
+  font-weight: 700;
+}
+
+.usercard-wrapper h2 span {
+  font-weight: 650;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

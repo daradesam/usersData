@@ -1,10 +1,9 @@
 import './App.css';
 import { useEffect, useState } from "react"
-import MainPage from "./components/MainPage";
+import Users from "./components/Users";
 import UserCard from './components/UserCard';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-
+import Home from './components/Home';
 
 export default function App() {
   const [users, setUsers] = useState([]);
@@ -18,16 +17,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<MainPage users={users} setUsers={setUsers} />} />
-        {/* {users.map((user)=>{
-          return <Route path='/:user' element={<UserCard user={user} />}/>
-        })} */}
-        <Route path='/:userId' element={<UserCard users={users}/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/users' element={<Users users={users} setUsers={setUsers} />} />
+        <Route path='/users/:id' element={<UserCard users={users} />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-// function UserCard({user}){
-//   return <h2>Details: {user.first_name} {user.last_name}</h2>
-// }
